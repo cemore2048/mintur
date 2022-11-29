@@ -13,9 +13,12 @@ const theme = extendTheme({ colors })
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <WalletContextProvider theme={theme}>
+    <ChakraProvider theme={theme}>
+    <WalletContextProvider>
         <Component {...pageProps} />
     </WalletContextProvider>
+
+    </ChakraProvider>
   )
 }
 
