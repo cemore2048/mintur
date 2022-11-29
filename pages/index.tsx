@@ -26,8 +26,6 @@ const Home: NextPage = () => {
       >
         <Stack w="full" h="calc(100vh)" justify="center">
           <NavBar/>
-					
-
           <Spacer />
           <Center>
 						{ !connected && <Disconnected/>}
